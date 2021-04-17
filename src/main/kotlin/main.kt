@@ -75,6 +75,7 @@ class CalculatorWork {
         when {
             secondVar == 0f -> {
                 declareStatement("Denominator cant be zero")
+                return
             }
             else -> {
                 result = firstVar.div(secondVar)
@@ -88,6 +89,7 @@ class CalculatorWork {
         when {
             secondVar == 0f -> {
                 declareStatement("Denominator cant be zero")
+                return
             }
             else -> {
                 result = firstVar.rem(secondVar)
